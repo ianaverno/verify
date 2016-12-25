@@ -91,13 +91,13 @@ describe CardValidator do
   describe ".valid?" do
     context "given a valid number" do
       it "returns true" do
-        expect(CardValidator.validate("4408 0412 3456 7893")).to be true
+        expect(CardValidator.valid?("4408 0412 3456 7893")).to be true
       end
     end
 
     context "given an invalid number" do
       it "returns false" do
-        expect(CardValidator.validate("4417 1234 5678 9112")).to be false
+        expect(CardValidator.valid?("4417 1234 5678 9112")).to be false
       end
     end
   end

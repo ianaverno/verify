@@ -88,7 +88,7 @@ describe CardValidator do
     end
   end
 
-  describe ".validate" do
+  describe ".valid?" do
     context "given a valid number" do
       it "returns true" do
         expect(CardValidator.validate("4408 0412 3456 7893")).to be true

@@ -16,6 +16,10 @@ class CardValidator
     end
   end
 
+  def self.validate(input_number)
+    card_number = input_number.gsub(/\s+/, "")
+  end
+
   private
     def self.is_amex?(number)
       /^3[47]\d{13}$/ === number

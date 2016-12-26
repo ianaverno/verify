@@ -4,9 +4,9 @@
 In the terminal app you are using:
 
 1. `cd verify`
-2. `ruby check_credit_card.rb [card number]`
+2. `ruby check_credit_card.rb *[card number]*`
 
-(**Note:** whitespace characters in `[card number]` are allowed and will not affect the result. Any other separators will invalidate the check and, thus, should not be used.)
+(**Note:** whitespace characters in `*[card number]*` are allowed and will not affect the result. Any other separators will invalidate the check and, thus, should not be used.)
 
 ###Example
 ```shell

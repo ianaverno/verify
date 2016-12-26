@@ -1,27 +1,24 @@
 class CardValidator
 
-  def self.identify_provider(input_number)
-    card_number = input_number.gsub(/\s+/, "")
-
+  def self.identify_provider(card_number)
     if is_amex?(card_number)
-      return "AMEX"
+      "AMEX"
     elsif is_discover?(card_number)
-      return "DISCOVER"
+      "DISCOVER"
     elsif is_mastercard?(card_number)
-      return "MASTERCARD"
+      "MASTERCARD"
     elsif is_visa?(card_number)
-      return "VISA"
+      "VISA"
     else
-      return "UNKNOWN"
+      "UNKNOWN"
     end
   end
 
-  def self.valid?(input_number)
-    card_number = input_number.gsub(/\s+/, "")
+  def self.valid?(card_number)
     if is_numeric?(card_number)
       luhn_validate(card_number)
     else
-      return false
+      false
     end
   end
 

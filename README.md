@@ -1,5 +1,9 @@
 #Source Lab Quiz
 
+##Setup
+1. `git clone` this repo
+2. `bundle install`
+
 ##Usage
 In the terminal app you are using:
 

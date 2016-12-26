@@ -45,6 +45,7 @@ class CardValidator
 
     def self.luhn_validate(number)
       sum = 0
+      
       number.reverse.each_char.with_index do |digit, index|
         if index.even?
           sum += digit.to_i

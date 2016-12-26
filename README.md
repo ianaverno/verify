@@ -1,8 +1,9 @@
 #Source Lab Quiz
 
 ##Setup
-1. `git clone` this repo
-2. `bundle install`
+1. `git clone`
+2. `cd verify`
+3. `bundle install`
 
 ##Usage
 In the terminal app you are using:
